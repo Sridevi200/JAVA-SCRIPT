@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task123</title>
+</head>
+<body>
+	<table border="">
+		<tbody>
+		<tr>
+			<th>course name</th>
+			<th>course number</th>
+			<th>course fees</th>
+			<th>course place</th>
+		</tr>
+		</tbody>
+	<script type="text/javascript">
+		var course = [{
+			"name" = "Html"
+			"number" = 23423
+			"fees" = 235
+			"place" = "dwp"
+		},
+		{ 
+			"name" = "Css"
+			"number" = 65687
+			"fees" = 567
+			"place" = "dwp"
+		},
+		{
+
+            "name" = "Javascript"
+			"number" = 67845
+			"fees" = 7656
+			"place" = "dwp"
+		}]
+		for(i=0;i<=course.length-1;i++)
+		{
+			let tr = document.createElement('tr');
+			let td1 = document.createElement('td')
+			let td2 = document.createElement('td')
+			let td3 = document.createElement('td')
+			let td4 = document.createElement('td')
+			td1.innerText = course[i].name
+			td2.innerText = course[i].cno
+			td3.innerText = course[i].fees
+			td4.innerText = course[i].places
+			tr.append(td1)
+			tr.append(td2)
+			tr.append(td3)
+			tr.append(td4)
+			document.getElementById('tbodyid').append(tr)
+		}		
+	</script>
+
+
+		
+	</table>
+
+</body>
+</html>

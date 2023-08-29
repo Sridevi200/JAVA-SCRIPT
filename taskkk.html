@@ -1,0 +1,48 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>taskk</title>
+</head>
+<body>
+	<div style="height: 500px; width: 1500px;
+	border: 2px solid white;">
+		<div style="height: 500px; width: 300px; border: 1px solid black; float: left; padding: 10px;  cursor: pointer; " onclick="getimage('events/edit 2.JPG')"> <img style="height: 500px; width: 300px;" src="1.jpg"></div>
+		<div style="height: 500px; width: 300px; border: 1px solid black; float: left; padding: 10px; cursor: pointer; " onclick="getimage('events/edit 2.JPG')"> <img style="height: 500px; width: 300px;" src="2.jpg"></div>
+		<div style="height: 500px; width: 300px; border: 1px solid black; float: left; padding: 10px; cursor: pointer; " onclick="getimage('events/edit 2.JPG')"><img style="height: 500px; width: 300px;" src="4.jpg">
+		</div>
+		<div style="height: 500px; width: 300px; border: 1px solid black; float: right; padding-left: 10px; cursor: pointer; " onclick="getimage('events/edit 2.JPG')"></div>
+	</div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid lightgray;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        
+            <div  style="float: left;">
+                <img src="events/edit 2.JPG" alt="Bhargav" class="a" style="height: 350px; width: 250px; float: left; cursor: pointer; " onclick="getimage('events/edit 2.JPG')">
+                <img src="events/edit 1.JPG" alt="Bhargav" class="a" style="height: 350px; width: 250px; float: left; cursor: pointer;" onclick="getimage('events/edit 1.JPG')">
+                <img src="events/edit 3.JPG" alt="Bhargav" class="a" style="height: 350px; width: 250px; float: right; cursor: pointer;" onclick="getimage('events/edit 3.JPG')">
+            </div>
+            <div class="a" style="height: 350px; width: 250px; float: left;" id="op"></div>
+        
+    </center>
+    <script>
+        function getimage(im_p){
+            document.getElementById('op').innerHTML="<img src='"+im_p+"'style='width:250px;height:350px;' />"
+        }
+    </script>
+</body>
+</html>

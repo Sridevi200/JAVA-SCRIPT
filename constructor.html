@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>constructor</title>
+</head>
+<body>
+	<script type="text/javascript">
+		class Student{
+			constructor(rno,fname,lname,clg){
+				this.rollno = rno;
+				this.firstname = fname;
+				this.lastname = lname;
+				this.college = clg;
+			}
+		}
+		let obj = new Student(1234,'sridevi','surisetti','ACOE')
+		console.log(obj.rollno,obj.firstname,obj.lastname,obj.college)
+		let obj2 = new Student(5678,'devi','puri','AEC')
+		console.log(obj2.rollno,obj2.firstname,obj2.lastname,obj2.college)
+
+
+
+		class cars{
+			constructor(amo,col,nam){
+				this.amount = amo;
+				this.color = col;
+				this.name = nam;
+			}
+		}
+		let obj3 = new cars(500000,'black','safari')
+		console.log(obj3.amount,obj3.color,obj3.name)
+	</script>
+
+</body>
+</html>

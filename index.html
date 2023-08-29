@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>types</title>
+</head>
+<body>
+   <script>
+    document.write("<br>");
+document.write("<br>");
+    // 5 members data will be print
+    var trainees =[{
+    'name':'sri',
+    'roll_no':1234,
+    'college':'acoe',
+    'branch' : 'ece'
+},
+{    'name':'devi',
+    'roll_no': 787,
+    'college': 'acoe',
+    'branch' : 'ece'
+
+},
+{
+    'name':'mani',
+    'roll_no':274,
+    'college':'acoe',
+    'branch' : 'ece'
+},
+{    'name':'king',
+    'roll_no': 9802,
+    'college': 'acoe',
+    'branch' : 'ece'
+
+}]
+for (var i = .length - 1; i >= 0; i--) {
+    for(key in trainees[i]){
+        document.write(trainees[i][key])
+    }
+    document.write("<br>")
+}
+
+
+</script>

@@ -1,0 +1,119 @@
+<!--Array Methos
+	1.Map Method
+	2.For Each
+	3.Find
+	4.Filter
+	5.Some
+	6.Every
+
+
+<!DOCTYPE html>
+<html> 
+<head>
+	<title>Array methods</title>
+</head>
+<body>
+	<h2>Array Methods |map()</h2>
+	<p>this method creates new array and return it after iteration will completed.</p>
+	<script type="text/javascript">
+		let trainees = ['devi','sri','jyo','hari'];
+		//for (var i=0; i< trainees.length,i++){
+			//console.log (trainees[i])
+			//}
+			let arr1 = trainees.map(function(ele,index,old_arr){
+				return"Dear"+ele
+			})
+			//or
+			//let arr1 = trainees.map(test);
+			//function test(ele,index,old_arr){
+				//return"Dear"+ele
+			//}
+			console.log(arr1)
+	</script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For Each</title>
+</head>
+<body>
+	<script type="text/javascript">
+	let trainees1 = [
+		{
+			'name':'raju',
+			'roll_no':'5678'
+		}
+		{
+			'name':'rani',
+			'roll_no':'2135'
+		}]
+		let tr ='';
+		let trs = trainees1.map(function(each_trainee,i,arr){
+			tr +="<tr><td>"+(i+1)+"</td><td>"+each_trainee.name+"</td><td>"+ each_trainee.roll_no+"</td></tr>";
+
+					});
+		//console.log(tr)
+		document.getElementById('table_id').innerHTML = tr
+	</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+	<h2>Array methods</h2>
+	<script type="text/javascript">
+		let salaries = [40000,25000,30000];
+		console.log(salaries);
+		salaries.forEach(function(index,amount){
+			var increment = amount/10;
+			//console.log(increment)
+			arr[index] = amount + increment;
+		});
+		console.log(salaries);
+	</script>
+
+</body>
+</html>--->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods | filter()</title>
+</head>
+<body>
+<h2>Array Methods | filter()</h2>
+<p>This method creates a new array and if the condition is satisfiled the return it after iteration will completed.</p>
+</body>
+	<script type="text/javascript">
+	let nums = [8,9,89,60,4,9];
+	
+	let even_nums = nums.filter(function(ele,i,arr){
+		return ele%2 == 0
+	})
+	console.log(even_nums)
+	
+	let odd_nums = nums.filter(function(ele,i,arr){
+		return ele%2 != 0
+	})
+	console.log(odd_nums)
+	
+	
+
+	
+	</script>
+</html>

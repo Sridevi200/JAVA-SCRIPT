@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types -task1</title>
+</head>
+<body>
+        <script>
+            document.writeln("<h1>"+"data types in javascript"+"</h1><br>");
+            document.writeln("<h3>"+"1.primitve data type"+"</h3><br>");
+            let integer=1;
+            let strring="sridevi";
+            let boolean=true;
+            document.writeln(typeof(integer)+"-->"+integer+"<br>");
+            document.writeln(typeof(strring)+"-->"+strring+"<br>");
+            document.writeln(typeof(boolean)+"-->"+boolean+"<br>");
+            document.writeln("<h3>"+"2.Non-primitve data type"+"</h3><br>")
+            var arr=[1,2,4,6];
+            document.writeln("array-object"+"-->"+arr+"<br>");
+            var obj={
+                name:"sridevi",
+                rollno:60
+            }
+            document.writeln(typeof(obj)+"<br>");
+            for(let i in obj)
+            {
+                document.write(obj[i]+" ");
+            }
+        </script>
+</body>
+</html>

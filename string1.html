@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+		<td>d</td>
+		<td>r</td>
+		<td>i</td>
+		<td>v</td>
+		<td>e</td>
+		<td>&nbsp;</td>
+		<td>r</td>
+		<td>e</td>
+		<td>a</td>
+		<td>d</td>
+		<td>y</td>
+		</tr>
+		<tr>
+		<td>0</td>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+		<td>7</td>
+		<td>8</td>
+		<td>9</td>
+		<td>10</td>
+		</tr>
+		<tr>
+	    <td>-11</td>
+		<td>-10</td>
+		<td>-9</td>
+		<td>-8</td>
+		<td>-7</td>
+		<td>-6</td>
+		<td>-5</td>
+		<td>-4</td>
+		<td>-3</td>
+		<td>-2</td>
+		<td>-1</td>
+		</tr>
+
+
+	</table>
+	<script type="text/javascript">
+		let str = 'drive ready';
+		function ss(str_name){
+			document.write("<b>"+str_name+"</b><br>");
+		}
+		ss("original String = "+str)
+		ss("String length = "+str.length)
+		ss("String length = "+str[2])
+		//charAt method
+		ss("char At method ="+str.charAt(3))//character at position 3.output:v
+		//indexOf method
+		ss("index Of ="+str.indexOf('r'))//1
+		ss("Last Index of = "+str.lastIndexOf('r'))//6
+		//trim() method
+	    let str1 ='sridevi     ';
+	    ss("Trim method ="+str1.trim())// remove the spaces from left to right
+	    let str2 ='DRIVE READY';
+	    ss("Lower Case ="+str2.toLowerCase())
+	    //For uppercase
+	    ss("Upper case ="+str.toUpperCase())
+	    //concatenation string
+	    let str3 ='Sri';
+	    let str4 ='Hari';
+	    let str5 ='Nav';
+	    let str6 ='Jyo';
+	    ss("concate string = "+str3.concat (str4,str5,str6));
+	    let str7 = 'fsd drive ready batch';
+	    //includes()=> returns boolean value
+	    ss("Includes method ="+str7.includes('batch'))//true
+	    ss("Includes method ="+str7.includes('afternoon'))//false
+	    //converting string into an array => split()
+	    let str8 = 'sridevi';
+	    //console.log(str8.split(""));
+	    let str9 = 'sri&hari,jyo';
+	    console.log(str9.split("&"))//string divider by based on deliminaton"&"
+	    console.log(str9.split(","))//string divider by based on deliminaton","
+
+	    //startsWith => returns the boolean value
+	    let str10 ='nav';
+	    ss("Starts with ="+str10.startsWith('n'))//true
+	     ss("Starts with ="+str10.startsWith('v'))//false
+
+	     //endswith => returns the boolean value
+	     let str11 ='darling';
+	     ss("Ends With = "+str11.endswith('d'))//true
+	     ss("Ends With = "+str11.endswith('r'))//false
+
+	     //substring method
+	     //it allows only position indexes
+	     ss("slice method = "+str.substring(1,4))//=(1,4-1)=1,3//riv
+	     ss("slice method = "+str.substring(4,1))//4,1 = 1,4//riv
+	     ss("slice method = "+str.substring(-1))//complete string will come
+
+
+	     //substr method = substr(atarpos,length of the characters from list arg position)
+	     ss("substr method = "+str.substr(1,4))//rive
+	     ss("substr method = "+str.substr(1,6))//rive r
+
+	    
+
+
+	    
+
+		</script>
+
+	
+	
+</body>
+</html>
